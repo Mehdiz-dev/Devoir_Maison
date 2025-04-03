@@ -1,0 +1,143 @@
+:root{
+    --couleur-bordure: #1C1C1C;
+    --couleur-highlight: #EA9F06;
+    --couleur-footer:#373737;
+}
+
+@font-face {
+    font-family: 'Liberation';
+    src: url('./fonts/LiberationSans-Bold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Liberation';
+    src: url('./fonts/LiberationSans-Regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    padding: 1rem 0 0 0;
+    background-image: url(./images/background.jpg);
+    width: 100%;
+    font-family: 'Liberation';
+}
+span{
+    color: var(--couleur-highlight);
+}
+.top_left{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+h2{
+    font-size: medium;
+    margin: 1rem;
+}
+.member_actions{
+    padding: 0 0 1rem 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1.5rem;
+    font-size: small;
+}
+
+
+.banner{
+    width: 93%;
+    border-top: 0.9rem var(--couleur-bordure) solid;
+    border-left: 0.9rem var(--couleur-bordure) solid;
+    border-right: 0.9rem var(--couleur-bordure) solid;
+    display: flex;
+    justify-content: center;
+}
+.banner img{
+    width: 100%;
+}
+
+main{
+    background-color: #F3F3F3;
+    font-family: 'Liberation';
+    width: 93%;
+    border-left: 0.9rem var(--couleur-bordure) solid;
+    border-right: 0.9rem var(--couleur-bordure) solid;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    font-weight: bold;
+}
+figure.products{
+    position : relative;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+}
+.gloves{
+    display: block;
+    width: 75%;
+    height: auto;
+}
+.rabais{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--couleur-bordure);
+    color: var(--couleur-highlight);
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.gloves_legend{
+    margin-top: -7.5%;
+    width: 75%;
+    text-align: center;
+    font-size: 10px;
+}
+
+.old_price{
+    text-decoration: line-through;
+}
+
+button{
+    background-color: black;
+    color: white;
+}
+.prices{
+    display: flex;
+    justify-items: center;
+    gap: 1rem;
+    margin: 0.5rem 0 2rem 0;
+}
+
+
+.interactions{
+    display: flex;
+    justify-content: center;
+    gap: 1.20rem;
+    background-color: white;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+footer{
+    background-color: var(--couleur-footer);
+}
+
+.icon{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
