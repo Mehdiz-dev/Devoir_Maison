@@ -71,7 +71,7 @@ main{
 
 }
 .banner{
-    width: 100%;
+    width: 103.5%;
     border-top: 0.9rem var(--couleur-bordure) solid;
     border-left: 0.9rem var(--couleur-bordure) solid;
     border-right: 0.9rem var(--couleur-bordure) solid;
@@ -79,6 +79,7 @@ main{
     justify-content: center;
     overflow: hidden;
     margin: 0 auto;
+    background-color: var(--couleur-bordure);
 }
 .banner img {
     width: 100%;
@@ -124,8 +125,10 @@ figure.products{
 }
 
 button{
-    background-color: black;
+    background: linear-gradient(to bottom, var(--couleur-bordure), black);
     color: white;
+    border-radius: 3px;
+    padding: 0.2rem 1rem;
 }
 .prices{
     display: flex;
@@ -266,15 +269,13 @@ footer{
         width: 100%;
         margin: 0 auto;
         overflow: hidden;
-      }
+        border: none;
+    }
       
-      .banner img {
-        width: 83.5%;
+    .banner img {
+        width: 100%;
         display: block;
-      }
-      
-      
-
+    }
     .products_grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
